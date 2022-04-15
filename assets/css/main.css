@@ -74,7 +74,6 @@ header{
   
   #nav.navbar.hidden {
     top: -80px;
-  
   }
   
   .navbar{
@@ -91,10 +90,12 @@ header{
   
   #navbar-logo{
     justify-self: start;
-   
     width: 240px;
-    
-    margin: 0 20px 10px
+    margin: 0 20px 10px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--lightyellow);
   }
   
   #navbar-logo{
@@ -201,6 +202,7 @@ span:hover:after {
 
 .row.align-items-end{
 	height: 250px;
+    margin-top: 100px;
 }
 
 /*--------------------------------- END HEADER -----------------------------------*/
@@ -217,6 +219,8 @@ main{
 }
 
 section{
+    width: 100%;
+    height: 100vh;
     margin-top: 50px;
 }
 
@@ -234,36 +238,155 @@ section{
 
 /*------------------------------- SECTION RELEASES -----------------------*/
 .releases-items{
-    width: 100%;
-    height: 10vh;
+   
 }
+
+.container-fluid{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1400px;
+	z-index:1;
+	/* background-color: var(--lightgraytransparent); */
+}
+
+.container-fluid .card{
+	position: relative;
+	width: 350px;
+	height: 350px;
+	margin: 30px;
+	border-radius: 5px ;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.71);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px); 
+	background-image: url("../medias/releases/cover-last-350.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.container-fluid > .cover2{
+	background-image: url("../medias/releases/cover-duality-350.jpg");
+}
+
+.container-fluid > .cover3{
+	background-image: url("../medias/releases/cover-lenina-350.jpg");
+}
+.container-fluid > .cover4{
+	background-image: url("../medias/releases/cover-lipsick-350.jpg");
+}
+.container-fluid > .cover5{
+	background-image: url("../medias/releases/cover-vivreetlaisserpourrir-350.jpg");
+}
+.container-fluid > .cover6{
+	background-image: url("../medias/releases/punk-rock-album-cover-3.jpg");
+}
+
+.container-fluid .card .content{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.container-fluid .card:hover .content{
+	background: rgba(0, 0, 0, 0.826);
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container-fluid .card .content h3{
+	font-size: 1.8em;
+	font-family: 'Waiting for the Sunrise', cursive;
+	color: var(--white);
+	z-index: 1;
+}
+
+.container-fluid .card .content h4{
+	font-size: 1.5em;
+	font-family: 'Waiting for the Sunrise', cursive;
+	color: var(--white);
+	z-index: 1;
+}
+
+.container-fluid .card .content p{
+	font-size: 1.3em;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: 400;
+	color: var(--white);
+}
+
+.container-fluid .card .content a{
+	position: relative;
+	display: inline-block;
+	padding: 8px 35px;
+	color: var(--deepdark);
+	text-decoration: none;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: bold;
+	
+}
+
+.container-fluid .card .content a:hover{
+	color: var(--lightyellow);
+}
+
+.container-fluid .card .content button{
+	border: 1px solid var(--lightdark);
+	background: var(--white);
+	border-radius: 20px;
+}
+
+.container-fluid .card .content button:hover{
+	background-color: var(--deepdark);
+}
+
+
+.card{
+	margin: 15px;
+}
+
+.content{
+	width: 350px;
+	height: 350px;
+}
+
+
 /*------------------------------- END SECTION RELEASES -----------------------*/
 
 /*------------------------------- SECTION ABOUT US -----------------------*/
 .about-items{
-    width: 100%;
-    height: 10vh;
+   
+    
 }
 /*------------------------------- END SECTION ABOUT US -----------------------*/
 
 /*------------------------------- SECTION LIVE -----------------------*/
 .live-items{
-    width: 100%;
-    height: 10vh;
+   
+    
 }
 /*------------------------------- END SECTION LIVE -----------------------*/
 
 /*------------------------------- SECTION PHOTOS VIDEOS -----------------------*/
 .photos-items{
-    width: 100%;
-    height: 10vh;
+   
+    
 }
 /*------------------------------- END SECTION PHOTOS VIDEOS -----------------------*/
 
 /*------------------------------- SECTION CONTACT -----------------------*/
 .contact-items{
-    width: 100%;
-    height: 10vh;
+   
+    
 }
 /*------------------------------- END SECTION CONTACT -----------------------*/
 

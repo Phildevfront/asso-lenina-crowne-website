@@ -26,7 +26,10 @@
     <header class="bgk-items">
         <div class="nav-container">
 			<nav id="nav" class="navbar">
-			  <a href="#"><img src="assets/medias/Brand/Logo-classic-lenina-jaune.png" alt="Lenina Crowne" id="navbar-logo"></a>
+			  <a href="#"  id="navbar-logo">
+                  LENINA CROWNE
+            </a>
+            <!-- <img src="assets/medias/Brand/Logo-classic-lenina-jaune.png" alt="Lenina Crowne" id="navbar-logo"> -->
 			  <div class="menu-toggle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -42,7 +45,7 @@
 			  </ul>
 			</nav>
 		</div>
-        <div class="container-fluid h-100">
+        <div class="container h-100">
             <div class="row align-items-start">
                 <div class="col text-center">
                     <h1>Lenina Crowne Asso.</h1>
@@ -59,7 +62,59 @@
     <main>
         <section id="releases" class="releases-items">
             <h2 class="title-section">Releases</h2>
-
+            <div class="container-fluid">
+				<div class="card">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h3>DEMO 2018</h3>
+						<p>Demo recorded at Potomak by Florent, Philippe and Cyril. <br><br>Mixing and mastering: Cyril</p>	 
+						<button><a href="https://leninaxcrowne.bandcamp.com/album/duality" target="_blank">LISTEN</a></button>
+					</div>
+					<div>
+						<!-- <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=560047098/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://leninaxcrowne.bandcamp.com/album/duality">Duality by lenina crowne</a></iframe> -->
+					</div>
+				</div>
+				<div class="card cover2">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h3>DUALITY - EP</h3>
+						<p>EP recorded in 2016 at 18 Marches and Le Plan<br> by Arthus Patissier<br><br>
+							Mixing: Arthus Patissier<br>
+							Mastering: Georges Moya</p>
+							<button><a href="#">LISTEN</a></button>
+					</div>
+				</div>
+				<div class="card cover3">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h3>LENINA CROWNE - LP</h3>
+						<p>Album recorded and mixed at l'Empreinte by Jay.<br><br>
+							Released on JULY 10, 2013</p>
+							<button><a href="#">LISTEN</a></button>
+					</div>
+				</div>
+				<div class="card cover4">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h3>LIPSICK - LP</h3>
+						<p>Album recorded in 2011</p>
+							<button><a href="#">LISTEN</a></button>
+					</div>
+				</div>
+				<div class="card cover5">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h4>VIVRE & LAISSER POURRIR - LP</h4>
+						<p>Album recorded in 2008.<br><br>
+							Recording: Gilles<br>
+							Mixing: JB
+						</p>
+							<button><a href="#">LISTEN</a></button>
+					</div>
+				</div>
+				<div class="card cover6">
+					<div class="content" class="card-img-top" alt="Responsive image">
+						<h3>NEXT ALBUM - LP</h3>
+						<p>SOON!</p>
+						<button><a href="#">LISTEN</a></buttton>
+					</div>
+				</div>
+			</div>
         </section>
         <section id="about" class="about-items">
             <h2 class="title-section">About us</h2>
@@ -90,5 +145,15 @@
 <script src="assets/js/burgerMenu.js"></script>
 <script src="assets/js/navbar-close.js"></script>
 <script src="assets/js//nav-scroll.js"></script>
+<script src="assets/js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+
+    });
+</script>
 </body>
 </html>
