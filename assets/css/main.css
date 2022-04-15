@@ -1,0 +1,38 @@
+/*------------- Reset ----------------------*/
+*{box-sizing: border-box;}
+*{margin:0;padding:0}
+*{scroll-behavior: smooth}
+*{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: white;}
+
+html, body{width: 100%; position: relative;}
+
+main{width: 100%; overflow-x: hidden;}
+
+
+/*------------------- FONTS ------------------*/
+
+/* font-family: 'Covered By Your Grace', cursive; */
+
+/* font-family: 'Waiting for the Sunrise', cursive; */
+
+/*----------------- END FONTS ------------------*/
+
+
+
+main{
+    width: 100%;
+    background-image: url("/assets/medias/bkg-img/dark-layer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1{
+    font-family:  'Covered By Your Grace', cursive;
+    font-weight: 400;
+}
+
+.alert.alert-success{
+    font-family: 'Waiting for the Sunrise', cursive;
+}
