@@ -1,4 +1,4 @@
-/*------------- Reset ----------------------*/
+/*------------- RESET ----------------------*/
 *{box-sizing: border-box;}
 *{margin:0;padding:0}
 *{scroll-behavior: smooth}
@@ -9,15 +9,44 @@ html, body{width: 100%; position: relative;}
 main{width: 100%; overflow-x: hidden;}
 
 
-/*------------------- FONTS ------------------*/
+/*----------------------- FONTS -----------------------*/
 
 /* font-family: 'Covered By Your Grace', cursive; */
 
 /* font-family: 'Waiting for the Sunrise', cursive; */
 
-/*----------------- END FONTS ------------------*/
+/*---------------------- END FONTS -----------------------*/
+
+/*----------------------- VAR COLOR ------------------------*/
+:root{
+    --brightred: #F9423D;
+    --darkgray: #212329;
+    --darkgrayTransparent: #21232961;
+	--darkredtransparent: #801e1b5d;
+    --deepdark:#000;
+    --lightred: #f9433dcc;
+    --lightyellow:  #f4a235;
+	--lightwhite:rgba(114,114,114,.25);
+    --lightdark: rgba(19, 18, 18, 0.664);
+	--ligthtransparent: rgba(0, 0, 0, 0.56);
+	--lightgraytransparent: rgba(61, 61, 61, 0.185);
+    --white: #fff;
+  }
+
+/*------------------------ END VAR COLOR ----------------------*/
 
 
+/*--------------------------------- HEADER --------------------------------------*/
+
+/*----------------- NAVBAR -------------------*/
+
+
+
+
+
+/*---------------- END NAVBAR ------------------*/
+
+/*--------------------------------- END HEADER -----------------------------------*/
 
 main{
     width: 100%;
@@ -28,11 +57,10 @@ main{
     height: 100vh;
 }
 
-h1{
-    font-family:  'Covered By Your Grace', cursive;
-    font-weight: 400;
+header{
+    background-image: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.alert.alert-success{
-    font-family: 'Waiting for the Sunrise', cursive;
-}
