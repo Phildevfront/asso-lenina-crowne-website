@@ -6,6 +6,8 @@
 
 html, body{width: 100%; position: relative;}
 
+body{font-size: 16px;}
+
 main{width: 100%; overflow-x: hidden;}
 
 
@@ -38,29 +40,140 @@ main{width: 100%; overflow-x: hidden;}
 
 /*--------------------------------- HEADER --------------------------------------*/
 
-/*----------------- NAVBAR -------------------*/
+/*----------------- NAVBAR MENU -------------------*/
+.nav-container{
+    width: 100vw;
+    background-color: var(--lightdark);
+    /*background-color: var(--darkgray);*/
+  }
+  
+  #nav{
+    position:fixed;
+    top: 0;
+    transition: top 0.4s ;
+    z-index: 9999;
+  }
+  
+  #nav.navbar{
+    background-color: var(--lightdark);
+  }
+  
+  #nav.navbar.hidden {
+    top: -80px;
+  
+  }
+  
+  .navbar{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Covered By Your Grace', cursive;
+    font-weight: bold;
+    
+  }
+  
+  #navbar-logo{
+    justify-self: start;
+   
+    width: 240px;
+    
+    margin: 0 20px 10px
+  }
+  
+  #navbar-logo{
+    cursor: pointer;
+  }
+  
+  .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    list-style: none;
+    text-align: center;
+    justify-self: end;
+  }
+  
+  .nav-links{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  
+  
+  .nav-links:hover{
+    color: var(--lightyellow);
+    transition: all 0.2s ease-out;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: var(--white) ;
+  }
 
+/*---------------Hover FX Nav menu--------------*/
+/* span {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
 
+span:before, span:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #fff;
+}
 
+span:before {
+	left: 0.5px;
+}
+span:after {
+	right: 0.5px;
+	background: rgb(255, 0, 0);
+	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
 
+span:hover:before {
+	background: rgb(255, 0, 0);
+	width: 100%;
+	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
 
-/*---------------- END NAVBAR ------------------*/
+span:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+} */
+/*--------------------END Hover FX Nav menu--------------*/
+
+/*---------------- END NAVBAR MENU ------------------*/
 
 /*--------------------------------- END HEADER -----------------------------------*/
+header{
+    background: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg') center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main{
+    background: url("/assets/medias/bkg-img/dark-layer.jpg") center center;
     width: 100%;
-    background-image: url("/assets/medias/bkg-img/dark-layer.jpg");
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
 }
 
-header{
-    background-image: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
