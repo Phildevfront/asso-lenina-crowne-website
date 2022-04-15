@@ -6,7 +6,7 @@
 
 html, body{width: 100%; position: relative;}
 
-body{font-size: 16px;}
+body{font-size: 18px;}
 
 main{width: 100%; overflow-x: hidden;}
 
@@ -33,12 +33,26 @@ main{width: 100%; overflow-x: hidden;}
 	--ligthtransparent: rgba(0, 0, 0, 0.56);
 	--lightgraytransparent: rgba(61, 61, 61, 0.185);
     --white: #fff;
-  }
+}
 
 /*------------------------ END VAR COLOR ----------------------*/
 
 
 /*--------------------------------- HEADER --------------------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.bgk-items{
+    background: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg') center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /*----------------- NAVBAR MENU -------------------*/
 .nav-container{
@@ -157,15 +171,41 @@ span:hover:after {
 /*--------------------END Hover FX Nav menu--------------*/
 
 /*---------------- END NAVBAR MENU ------------------*/
+.col h1, h2, h3{
+    color: var(--white);
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.col h1{
+	font-size: 6em;
+	font-weight: 400;
+	color: var(--lightyellow);
+}
+
+.col h2{
+	font-size: 3.75em;
+	font-weight: 400;
+	color: var(--white);
+}
+
+.col h3{
+	font-size: 2em;
+	font-weight: 400;
+	color: var(--white);
+}
+
+.row.align-items-start{
+	height:450px;
+	padding-top: 200px;
+}
+
+.row.align-items-end{
+	height: 250px;
+}
 
 /*--------------------------------- END HEADER -----------------------------------*/
-header{
-    background: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg') center center;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
+/*--------------------------------- MAIN -----------------------------------*/
 
 main{
     background: url("/assets/medias/bkg-img/dark-layer.jpg") center center;
@@ -176,4 +216,59 @@ main{
     background-attachment: fixed;
 }
 
+section{
+    margin-top: 50px;
+}
+
+.title-section{
+    font-family: 'Covered By Your Grace';
+    font-weight: 400;
+    text-transform: none;
+    font-size: 60px;
+    letter-spacing: 0;
+    font-style: inherit;
+    color: var(--white);
+    line-height: 22px;
+    text-align: center;
+}
+
+/*------------------------------- SECTION RELEASES -----------------------*/
+.releases-items{
+    width: 100%;
+    height: 10vh;
+}
+/*------------------------------- END SECTION RELEASES -----------------------*/
+
+/*------------------------------- SECTION ABOUT US -----------------------*/
+.about-items{
+    width: 100%;
+    height: 10vh;
+}
+/*------------------------------- END SECTION ABOUT US -----------------------*/
+
+/*------------------------------- SECTION LIVE -----------------------*/
+.live-items{
+    width: 100%;
+    height: 10vh;
+}
+/*------------------------------- END SECTION LIVE -----------------------*/
+
+/*------------------------------- SECTION PHOTOS VIDEOS -----------------------*/
+.photos-items{
+    width: 100%;
+    height: 10vh;
+}
+/*------------------------------- END SECTION PHOTOS VIDEOS -----------------------*/
+
+/*------------------------------- SECTION CONTACT -----------------------*/
+.contact-items{
+    width: 100%;
+    height: 10vh;
+}
+/*------------------------------- END SECTION CONTACT -----------------------*/
+
+
+
+
+/*--------------------------------- END MAIN -----------------------------------*/
 
