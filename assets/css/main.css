@@ -32,6 +32,7 @@ main{width: 100%; overflow-x: hidden;}
     --lightdark: rgba(19, 18, 18, 0.664);
 	--ligthtransparent: rgba(0, 0, 0, 0.56);
 	--lightgraytransparent: rgba(61, 61, 61, 0.185);
+    --whitegraytransparent: rgba(183, 183, 183, 0.655);
     --white: #fff;
 }
 
@@ -48,7 +49,6 @@ header{
 
 .bgk-items{
     background: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg') center center;
-    width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ header{
   }
   
   .nav-links{
-    font-size: 1.2em;
+    font-size: 1.5em;
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -212,16 +212,17 @@ span:hover:after {
 main{
     background: url("/assets/medias/bkg-img/dark-layer.jpg") center center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* filter: grayscale(100%); */
 }
 
 section{
     width: 100%;
-    height: 100vh;
-    margin-top: 50px;
+    margin: 100px 0;
+    overflow: hidden;
 }
 
 .title-section{
@@ -234,11 +235,12 @@ section{
     color: var(--white);
     line-height: 22px;
     text-align: center;
+    padding: 100px 0;
 }
 
 /*------------------------------- SECTION RELEASES -----------------------*/
 .releases-items{
-   
+
 }
 
 .container-fluid{
@@ -256,7 +258,7 @@ section{
 	position: relative;
 	width: 350px;
 	height: 350px;
-	margin: 30px;
+	margin: 25px;
 	border-radius: 5px ;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	background: rgba(0, 0, 0, 0.71);
@@ -365,33 +367,160 @@ section{
 /*------------------------------- SECTION ABOUT US -----------------------*/
 .about-items{
    
-    
+}
+
+.content-text{
+	display: flex;
+	flex-direction:row;
+    justify-content: center;
+	margin: auto;
+    padding: 20px;
+	background-color: var(--lightdark);
+	width: 75%;
+}
+
+.content-text p{
+    display:flex;
+	padding: 20px;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: 400;
+	font-size: 24px;
+	color:#ffffff;
 }
 /*------------------------------- END SECTION ABOUT US -----------------------*/
 
 /*------------------------------- SECTION LIVE -----------------------*/
 .live-items{
-   
-    
+}
+
+.col-lg{
+	color: #ffffff;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .row{
+	border-top: 1px solid var(--whitegraytransparent);
+	margin-left: 30px!important;
+	margin-right: 30px!important;
+	padding: 10px;
+	transition: all 1s;
+}
+
+.container .row:hover{
+	background-color: var(--darkredtransparent);
+	transition: all 1s;
+}
+
+a.button{
+	font-size: 0.9em;
+	color: var(--white);
+	background-color: var(--deepdark);
+	border: 1px solid var(--white);
+	text-decoration: none;
+	padding: 5px 40px;
+	transition: all 0.1s linear 0.1s;
+}
+
+a.button:hover{
+	background-color: var(--brightred);
+	text-decoration: none;
+	color: var(--white);
+	transition: all 0.1s linear 0.1s;
 }
 /*------------------------------- END SECTION LIVE -----------------------*/
 
 /*------------------------------- SECTION PHOTOS VIDEOS -----------------------*/
 .photos-items{
-   
-    
+}
+
+/*-----------videos----------------*/
+.wrapper-video{
+	display: flex;
+	justify-content: center;
+	filter: grayscale(100%);
+    padding: 30px
 }
 /*------------------------------- END SECTION PHOTOS VIDEOS -----------------------*/
 
 /*------------------------------- SECTION CONTACT -----------------------*/
 .contact-items{
-   
-    
 }
+
+.contact{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.follow{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.follow p{
+	color: #ffffff;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: 400;
+	font-size: 24px;
+}
+
 /*------------------------------- END SECTION CONTACT -----------------------*/
 
+/*--------------------------------- END MAIN -------------------------------------*/
 
+/*---------------------------------- FOOTER --------------------------------------*/
+footer{
+	background-image: linear-gradient(rgba(42, 41, 41, 0.896), 
+    rgba(5, 5, 5, 0.766)), url("../medias/bkg-images/dark-layer.jpg");
+	background-size: cover;
+}
 
+.social-banner{
+	margin-bottom: 90px;
+	background-color: #000000;
+}
+  
+.social-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
-/*--------------------------------- END MAIN -----------------------------------*/
+.social-icons i{
+	padding: 50px;
+}
 
+.fa-facebook:hover{
+	color:#3366cc; 
+	cursor: pointer;
+}
+
+.fa-bandcamp:hover {
+    color: #669999;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    color: #3399ff;
+    cursor: pointer;
+}
+  .credit{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	color: var(--white);
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 50px;
+  }
+
+  .credit a{
+	text-decoration: none;
+  }
