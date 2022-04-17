@@ -403,7 +403,7 @@ section{
 	justify-content: center;
 	align-items: center;
 }
-.container .row{
+.wrapper .row{
 	border-top: 1px solid var(--whitegraytransparent);
 	margin-left: 30px!important;
 	margin-right: 30px!important;
@@ -411,7 +411,7 @@ section{
 	transition: all 1s;
 }
 
-.container .row:hover{
+.wrapper .row:hover{
 	background-color: var(--darkredtransparent);
 	transition: all 1s;
 }
@@ -444,6 +444,14 @@ a.button:hover{
 	justify-content: center;
 	filter: grayscale(100%);
     padding: 30px
+}
+
+.carousel img{
+	margin: auto;
+}
+
+.carousel iframe{
+	margin: auto;
 }
 /*------------------------------- END SECTION PHOTOS VIDEOS -----------------------*/
 

@@ -141,7 +141,7 @@
         </section>
         <section id="live" class="live-items">
             <h2 class="title-section">Live</h2>
-            <div class="container">
+            <div class="wrapper">
 				<div class="row">
 					<div class="col-lg">20 Apr 2022</div>
 					<div class="col-lg">Rock City</div>
@@ -170,8 +170,38 @@
 
         </section>
         <section id="photos" class="photos-items">
-            <h2 class="title-section">Photos - Videos</h2>
-            <div class="photo-gallery">
+            <h2 class="title-section">Photos</h2>
+			<div id="carousel" class="carousel slide">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="assets/medias/gallery/1_big.jpg" class="d-block w-50" alt="Image 1">
+				  </div>
+				  <div class="carousel-item">
+					<img src="assets/medias/gallery/2_big.jpg" class="d-block w-50" alt="Image 2">
+				  </div>
+				  <div class="carousel-item">
+					<img src="assets/medias/gallery/3_big.jpg" class="d-block w-50" alt="Image 3">
+				  </div>
+				  <div class="carousel-item">
+					<img src="assets/medias/gallery/4_big.jpg" class="d-block w-50" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="assets/medias/gallery/6_big.jpg" class="d-block w-50" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="assets/medias/gallery/7_big.jpg" class="d-block w-50" alt="...">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+            <!--<div class="photo-gallery">
 				<div class="container-photos"> 
 					<div class="row photos">
 						<div class="col-sm-6 col-md-4 col-lg-3 item">
@@ -193,8 +223,8 @@
 							<a href="assets/medias/gallery/4_big.jpg" data-lightbox="photos">
 								<img class="img-fluid" src="assets/medias/gallery/4_small.jpg" alt="Image 4" />
 							</a>
-						</div>
-						<!-- <div class="col-sm-6 col-md-4 col-lg-3 item">
+						</div> 
+						 <div class="col-sm-6 col-md-4 col-lg-3 item">
 							<a href="assets/medias/gallery/images5.jpg" data-lightbox="photos">
 								<img class="img-fluid" src="assets/medias/gallery/images5-thumb.jpg" alt="Image 5" />
 							</a>
@@ -213,14 +243,34 @@
 							<a href="assets/medias/gallery/images8.jpg" data-lightbox="photos">
 								<img class="img-fluid" src="assets/medias/gallery/images8-thumb.jpg" alt="Image 8" />
 							</a>
-						</div>	 -->
+						</div>	 
 					</div>
 				</div>
-			</div>
-            <h2 class="title-section">Video</h2>	
-			<div class="wrapper-video">
+			</div>-->
+            <h2 class="title-section">Videos</h2>
+			<div id="carouselvideo" class="carousel slide">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<!-- <img src="assets/medias/gallery/1_big.jpg" class="d-block w-50" alt="Image 1"> -->
+					<iframe width="555" height="300" class="d-block w-50" src="https://www.youtube.com/embed/DEfYsCU6gUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>
+				  <div class="carousel-item">
+					<!-- <img src="assets/medias/gallery/2_big.jpg" class="d-block w-50" alt="Image 2"> -->
+					<iframe width="560" height="315" class="d-block w-50" src="https://www.youtube.com/embed/NT1j1QzcLnA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselvideo" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselvideo" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>	
+			<!-- <div class="wrapper-video">
 				<iframe width="555" height="300" src="https://www.youtube.com/embed/DEfYsCU6gUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+			</div> -->
         </section>
         <section id="contact" class="contact-items">
             <h2 class="title-section">Contact</h2>
@@ -258,6 +308,7 @@
 <!-- Bootstrap CDN JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <!-- My JavaScript -->
+<script src="assets/js/gallery-lightbox.js"></script>
 <script src="assets/js/burgerMenu.js"></script>
 <script src="assets/js/navbar-close.js"></script>
 <script src="assets/js//nav-scroll.js"></script>
