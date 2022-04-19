@@ -168,16 +168,103 @@
     
 }
 
-@media screen and (min-width:576px) and (max-width: 768px) {
+@media screen and (min-width:576px) and (max-width: 767px) {
     
 }
 
-@media screen and (min-width:414px) and (max-width: 576px) {
+@media screen and (min-width:414px) and (max-width: 575px) {
+/* iPhone6/7/8 PLUS */
+
+/*----------------Navbar Menu-------------*/
+#navbar-logo{
+    font-size: 1.3em;
+}
+
+ /*---------------HEADER main title--------*/
+    .col h1{
+        font-size: 2.5em;
+    }
+
+    .col h2{
+        font-size: 2em;
+    }
+
+    .col h3{
+        font-size: 1.5em;
+    }
+
+    .row.align-items-start {
+        height: 490px;
+        padding-top: 132px;
+    }
+
+    .row.align-items-end {
+        height: 0;
+        margin-top: 45px;
+    }
+
+/*-------------SECTION RELEASES--------------*/
+
+    .container-fluid .card.cover2 .content h3{
+        font-size: 1.7em;
+    }
+
+    .container-fluid .card.cover2 .content p{
+        font-size: 1.1em;
+    }
+
+    /*---------------SECTION PHOTO VIDEO-----------------*/
+
+    .w-50{
+        width: 70%!important;
+    }
+
+    iframe{
+        height: 60%;
+    }
+
+    /*------------------CONTACT-----------------*/
+
+    .follow {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .follow p{
+        font-size: 22px;
+    }
+
+    .social-icons{
+        flex-direction: column;
+    }
+
+    /*----------FOOTER----------*/
+
+    .credit{
+        flex-direction: column;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 25px 15px;
+    }
+
+    .credit:first-child{
+        text-align: center;
+    }   
+
 
 }
 
-@media screen and (min-width:375px) and (max-width: 414px) {
-    /* iPhone6/7/8*/
+@media screen and (min-width:375px) and (max-width: 413px) {
+    /* iPhone6/7/8 */
+
+    /*----------------Navbar Menu-------------*/
+    #navbar-logo{
+        font-size: 1.3em;
+    }
+
+    /*---------------HEADER main title--------*/
     .col h1{
         font-size: 2.5em;
     }
@@ -200,13 +287,69 @@
         margin-top: 0;
     }
 
+    /*----------------SECTION RELEASES-------------*/
+
     .container-fluid .card{
+        width: 301px;
         height: 301px;
     }
+
+    .container-fluid .card .content h3{
+        font-size: 1.5em;
+    }
+    
+    .container-fluid .card .content h4{
+        font-size: 1.1em;
+    }
+
+    .container-fluid .card .content p{
+        font-size: 1em;
+    }
+    /*---------------SECTION PHOTO VIDEO-----------------*/
+
+    .w-50{
+        width: 70%!important;
+    }
+
+    iframe{
+        height: 60%;
+    }
+
+
+    /*------------------CONTACT-----------------*/
+
+    .follow {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .follow p{
+        font-size: 22px;
+    }
+
+    .social-icons{
+        flex-direction: column;
+    }
+
+    /*----------FOOTER----------*/
+
+    .credit{
+        flex-direction: column;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 25px 15px;
+    }
+
+    .credit:first-child{
+        text-align: center;
+    }
+
     
 }
 
-@media screen and (min-width:320px) and (max-width: 375px) {
+@media screen and (min-width:320px) and (max-width: 374px) {
     /* iPhone5 */
     /*----------------Navbar Menu-------------*/
     #navbar-logo{
@@ -261,7 +404,7 @@
         padding: 25px;
     }
 
-    /*---------------SECTION PHOTO -------------*/
+    /*---------------SECTION PHOTO VIDEO -------------*/
 
     .w-50{
         width: 70%!important;
@@ -294,7 +437,7 @@
     .credit{
         flex-direction: column;
         font-weight: 800;
-        font-size: 15px;
+        font-size: 16px;
         padding: 25px 15px;
     }
 
@@ -302,4 +445,12 @@
         text-align: center;
     }
 
+}
+
+@media screen and (min-height:480px) {
+
+    .row.align-items-start {
+        height: 345px;
+        padding-top: 137px;
+    }
 }
