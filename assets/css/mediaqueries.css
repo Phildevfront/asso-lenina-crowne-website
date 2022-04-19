@@ -133,43 +133,108 @@
 }
 
 
-@media screen and (max-width:992px) and (max-width: 1200px) {
+@media screen and (min-width:993px) and (max-width: 1200px) {
     .col h1{
-        font-size: 6em;
+        font-size: 5em;
         font-weight: 400;
         color: var(--lightyellow);
     }
     
     .col h2{
-        font-size: 3.75em;
+        font-size: 3em;
         font-weight: 400;
         color: var(--white);
     }
     
     .col h3{
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 400;
         color: var(--white);
     }
     
-    .row.align-items-start{
-        height:450px;
-        padding-top: 200px;
+    .row.align-items-start {
+        height: 450px;
+        padding-top: 150px;
     }
     
-    .row.align-items-end{
-        height: 250px;
-        margin-top: 100px;
+    .row.align-items-end {
+        height: 175px;
+        margin-top: 110px;
     }
 }
 
 
 @media screen and (min-width:768px) and (max-width: 992px) {
-    
+     /*----------------Navbar Menu-------------*/
+     #navbar-logo{
+        font-size: 1.3em;
+    }
+
+    /*---------------HEADER main title--------*/
+    .col h1{
+        font-size: 4em;
+    }
+
+    .col h2{
+        font-size: 2em;
+    }
+
+    .col h3{
+        font-size: 1.5em;
+    }
+
+    .row.align-items-start {
+        height: 490px;
+        padding-top: 132px;
+    }
+
+    .row.align-items-end {
+        height: 0;
+        margin-top: 45px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width: 767px) {
-    
+
+    /*----------------Navbar Menu-------------*/
+    #navbar-logo{
+        font-size: 1.3em;
+    }
+
+    /*---------------HEADER main title--------*/
+    .col h1{
+        font-size: 4em;
+    }
+
+    .col h2{
+        font-size: 2em;
+    }
+
+    .col h3{
+        font-size: 1.5em;
+    }
+
+    .row.align-items-start {
+        height: 490px;
+        padding-top: 132px;
+    }
+
+    .row.align-items-end {
+        height: 0;
+        margin-top: 45px;
+    }
+
+    /*-------------SECTION RELEASES--------------*/
+
+    .container-fluid .card.cover2 .content h3{
+        font-size: 1.7em;
+    }
+
+    .container-fluid .card.cover2 .content p{
+        font-size: 1.1em;
+    }
+   
+
 }
 
 @media screen and (min-width:414px) and (max-width: 575px) {
@@ -203,7 +268,7 @@
         margin-top: 45px;
     }
 
-/*-------------SECTION RELEASES--------------*/
+    /*-------------SECTION RELEASES--------------*/
 
     .container-fluid .card.cover2 .content h3{
         font-size: 1.7em;
@@ -284,7 +349,7 @@
     
     .row.align-items-end {
         height: 0;
-        margin-top: 0;
+        margin-top: 55px;
     }
 
     /*----------------SECTION RELEASES-------------*/
@@ -447,7 +512,23 @@
 
 }
 
-@media screen and (min-height:480px) {
+@media screen and (max-height:667px) {
+
+    .row.align-items-start {
+        height: 410px;
+        padding-top: 137px;
+    }
+}
+
+@media screen and (max-height:568px) {
+
+    .row.align-items-start {
+        height: 410px;
+        padding-top: 137px;
+    }
+}
+
+@media screen and (max-height:480px) {
 
     .row.align-items-start {
         height: 345px;
