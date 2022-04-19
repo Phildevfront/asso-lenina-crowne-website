@@ -237,24 +237,31 @@
         margin-top: 0;
     }
 
+    /*----------------SECTION RELEASES-------------*/
+
     .container-fluid .card{
         height: 247px;
-        overflow-wrap: break-word;
     }
 
     .container-fluid .card .content h3{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     .container-fluid .card .content h4{
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container-fluid .card .content p{
-        font-size: 0.6em;
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+    
+    /*-------------------SECTION Live-------------*/
+    .wrapper .row{
+        padding: 25px;
     }
 
-    /*---------------SECTION PHOTO --------*/
+    /*---------------SECTION PHOTO -------------*/
 
     .w-50{
         width: 70%!important;
@@ -264,7 +271,7 @@
         height: 60%;
     }
 
-    /*----------CONTACT----------*/
+    /*------------------CONTACT-----------------*/
 
     .follow {
         display: flex;
