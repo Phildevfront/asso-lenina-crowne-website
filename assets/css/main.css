@@ -44,7 +44,6 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 .bgk-items{
@@ -108,19 +107,23 @@ header{
     list-style: none;
     text-align: center;
     justify-self: end;
+	padding-right: 2rem;
   }
   
   .nav-links{
-    font-size: 1.5em;
+    font-size: 24px;
+	font-weight: 400;
+	line-height: 22px;
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+	margin: 0 10px;
   }
   
   
   .nav-links:hover{
-    color: var(--lightyellow);
+    color: var(--white);
     transition: all 0.2s ease-out;
   }
   
@@ -133,13 +136,13 @@ header{
   }
 
 /*---------------Hover FX Nav menu--------------*/
-/* span {
+.line-through {
 	position: relative;
 	display: block;
 	cursor: pointer;
 }
 
-span:before, span:after {
+.line-through:before, .line-through:after {
 	content: '';
 	position: absolute;
 	width: 0%;
@@ -149,26 +152,28 @@ span:before, span:after {
 	background: #fff;
 }
 
-span:before {
-	left: 0.5px;
+.line-through:before {
+	left: 0.3px;
 }
-span:after {
-	right: 0.5px;
-	background: rgb(255, 0, 0);
+.line-through:after {
+	right: 0.3px;
+	background: var(--lightred);
 	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
-	background: rgb(255, 0, 0);
+.line-through:hover:before {
+	background: var(--lightred);
 	width: 100%;
 	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+	cursor: pointer;
 }
 
-span:hover:after {
+.line-through:hover:after {
 	background: transparent;
 	width: 100%;
 	transition: 0s;
-} */
+	cursor: pointer;
+}
 /*--------------------END Hover FX Nav menu--------------*/
 
 /*---------------- END NAVBAR MENU ------------------*/
@@ -484,7 +489,7 @@ a.button:hover{
 /*---------------------------------- FOOTER --------------------------------------*/
 footer{
 	background-image: linear-gradient(rgba(42, 41, 41, 0.668), 
-    rgba(5, 5, 5, 0.585)), url("/assets/medias/bkg-img/dark-layer.jpg");
+    rgba(5, 5, 5, 0.585)),url("/assets/medias/bkg-img/dark-layer.jpg");
 	background-size: cover;
 }
 .social-banner{
