@@ -245,9 +245,6 @@ section{
 }
 
 /*------------------------------- SECTION RELEASES -----------------------*/
-.releases-items{
-
-}
 
 .container-fluid{
 	position: relative;
@@ -257,7 +254,6 @@ section{
 	align-items: center;
 	max-width: 1400px;
 	z-index:1;
-	/* background-color: var(--lightgraytransparent); */
 }
 
 .container-fluid .card{
@@ -392,9 +388,7 @@ button.return{
 /*------------------------------- END SECTION RELEASES -----------------------*/
 
 /*------------------------------- SECTION ABOUT US -----------------------*/
-.about-items{
-   
-}
+
 
 .content-text{
 	display: flex;
@@ -417,8 +411,6 @@ button.return{
 /*------------------------------- END SECTION ABOUT US -----------------------*/
 
 /*------------------------------- SECTION LIVE -----------------------*/
-.live-items{
-}
 
 .col-lg{
 	color: #ffffff;
@@ -461,8 +453,6 @@ a.button:hover{
 /*------------------------------- END SECTION LIVE -----------------------*/
 
 /*------------------------------- SECTION PHOTOS VIDEOS -----------------------*/
-.photos-items{
-}
 
 /*-----------videos----------------*/
 
@@ -476,8 +466,6 @@ a.button:hover{
 /*------------------------------- END SECTION PHOTOS VIDEOS -----------------------*/
 
 /*------------------------------- SECTION CONTACT -----------------------*/
-.contact-items{
-}
 
 .contact{
 	padding-top: 80px;
