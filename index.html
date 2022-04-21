@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="assets/css/mediaqueries.css">
 
     <!---------------------------- FONTS --------------------------------------->
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
 
-	<!------ICON ------>
+	<!---------------------------- ICON ---------------------------------------->
 	<script src="https://kit.fontawesome.com/4af066ad9c.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <title>Asso Lenina Crowne official</title>
+	<!------- META ------>
+	<meta name="description" content="Lenina Crowne association official web page"/>
 </head>
 <body>
     <header class="bgk-items">
@@ -33,7 +33,6 @@
 			  <a href="#"  id="navbar-logo">
                   LENINA CROWNE
             </a>
-            <!-- <img src="assets/medias/Brand/Logo-classic-lenina-jaune.png" alt="Lenina Crowne" id="navbar-logo"> -->
 			  <div class="menu-toggle" id="mobile-menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -67,14 +66,19 @@
         <section id="releases" class="releases-items">
             <h2 class="title-section">Releases</h2>
             <div class="container-fluid">
-				<div class="card">
-					<div class="content" class="card-img-top" alt="Responsive image">
-						<h3>DEMO 2018</h3>
-						<p>Demo recorded at Potomak<br /> by Florent, Philippe and Cyril. <br><br>Mixing and mastering: Cyril</p>	 
-						<button><a href="https://leninaxcrowne.bandcamp.com/album/demo-2018" target="_blank">LISTEN</a></button>
+				<div id="wrapper">
+					<div id="first" class="card">
+						<div  class="content" class="card-img-top" alt="Responsive image">
+							<h3>DEMO 2018</h3>
+							<p>Demo recorded at Potomak<br /> by Florent, Philippe and Cyril. <br><br>Mixing and mastering: Cyril</p>	 
+							<button id="button" value="listen">LISTEN</button>
+						</div>
 					</div>
-					<div>
-						<!-- <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=560047098/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://leninaxcrowne.bandcamp.com/album/duality">Duality by lenina crowne</a></iframe> -->
+					<div id="second">
+						<iframe style="border: 5px; width: 320px; height: 320px;" 
+						src="https://bandcamp.com/EmbeddedPlayer/album=2540421667/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" 
+						seamless><a href="https://leninaxcrowne.bandcamp.com/album/demo-2018">DEMO 2018 by lenina crowne</a></iframe>
+						<!-- <a href="#first" class="return" value="listen">< back</a> -->
 					</div>
 				</div>
 				<div class="card cover2">
@@ -83,7 +87,7 @@
 						<p>EP recorded in 2016 at 18 Marches<br /> and Le Plan<br> by Arthus Patissier<br><br>
 							Mixing: Arthus Patissier<br>
 							Mastering: Georges Moya</p>
-							<button><a href="https://leninaxcrowne.bandcamp.com/album/duality">LISTEN</a></button>
+						<a href="https://leninaxcrowne.bandcamp.com/album/duality">LISTEN</a>
 					</div>
 				</div>
 				<div class="card cover3">
@@ -91,14 +95,14 @@
 						<h3>LENINA CROWNE - LP</h3>
 						<p>Album recorded and mixed<br /> at l'Empreinte by Jay.<br><br>
 							Released on JULY 10, 2013</p>
-							<button><a href="https://leninaxcrowne.bandcamp.com/album/s-t">LISTEN</a></button>
+						<a href="https://leninaxcrowne.bandcamp.com/album/s-t">LISTEN</a>
 					</div>
 				</div>
 				<div class="card cover4">
 					<div class="content" class="card-img-top" alt="Responsive image">
 						<h3>LIPSICK - LP</h3>
 						<p>Album recorded in 2011</p>
-							<button><a href="https://leninaxcrowne.bandcamp.com/album/lipsick">LISTEN</a></button>
+						<a href="https://leninaxcrowne.bandcamp.com/album/lipsick">LISTEN</a>
 					</div>
 				</div>
 				<div class="card cover5">
@@ -108,14 +112,14 @@
 							Recording: Gilles<br>
 							Mixing: JB
 						</p>
-							<button><a href="https://leninaxcrowne.bandcamp.com/album/vivre-et-laisser-pourrir">LISTEN</a></button>
+						<a href="https://leninaxcrowne.bandcamp.com/album/vivre-et-laisser-pourrir">LISTEN</a>
 					</div>
 				</div>
 				<div class="card cover6">
 					<div class="content" class="card-img-top" alt="Responsive image">
 						<h3>NEXT ALBUM - LP</h3>
 						<p>SOON!</p>
-						<button><a href="#">LISTEN</a></buttton>
+					<a href="#">LISTEN</a>
 					</div>
 				</div>
 			</div>
@@ -141,7 +145,7 @@
                     finally to a sound of its own without "denying" the slightest bit of its influences<br>
                     “varied” on the punk-rock scene
                 </p>
-        </div>
+     		</div>
         </section>
         <section id="live" class="live-items">
             <h2 class="title-section">Live</h2>
@@ -171,7 +175,6 @@
 					<div class="col-lg"><a class="button" href="#">Buy Tickets</a></div>
 				</div>
 			</div>
-
         </section>
         <section id="photos" class="photos-items">
             <h2 class="title-section">Photos</h2>
@@ -210,11 +213,9 @@
 			<div id="carouselvideo" class="carousel slide">
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<!-- <img src="assets/medias/gallery/1_big.jpg" class="d-block w-50" alt="Image 1"> -->
 					<iframe width="555" height="315" class="d-block w-50" src="https://www.youtube.com/embed/DEfYsCU6gUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				  </div>
 				  <div class="carousel-item">
-					<!-- <img src="assets/medias/gallery/2_big.jpg" class="d-block w-50" alt="Image 2"> -->
 					<iframe width="560" height="315" class="d-block w-50" src="https://www.youtube.com/embed/NT1j1QzcLnA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				  </div>
 				</div>
@@ -227,16 +228,13 @@
 				  <span class="visually-hidden">Next</span>
 				</button>
 			  </div>	
-			<!-- <div class="wrapper-video">
-				<iframe width="555" height="300" src="https://www.youtube.com/embed/DEfYsCU6gUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div> -->
         </section>
         <section id="contact" class="contact-items">
             <h2 class="title-section">Contact</h2>
             <div class="follow">
-				<p>Booking enquiries: Agents Name bookings@example.com</p>
-				<p>Manager: Manager Name manager@example.com</p>
-				<p>Press: Press Managers Name press@example.com</p>
+				<p>Booking enquiries: LUC leninaxxxcrowne@gmail.com</p>
+				<p>Manager: JUSTIN leninaxxxcrowne@gmail.com</p>
+				<p>Press: ALEX leninaxxxcrowne@gmail.com</p>
 			</div>
 			<div class="social-icons">
 				<a href="https://fr-fr.facebook.com/leninacr0wne/" class="facebook" target="_blank">
@@ -265,6 +263,7 @@
 <!-- Bootstrap CDN JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <!-- My JavaScript -->
+<script src="assets/js/show-hide-cover.js"></script>
 <script src="assets/js/gallery-lightbox.js"></script>
 <script src="assets/js/burgerMenu.js"></script>
 <script src="assets/js/navbar-close.js"></script>

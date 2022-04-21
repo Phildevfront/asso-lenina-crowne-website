@@ -117,25 +117,25 @@ header{
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    /* padding: 0 20px; */
 	margin: 0 10px;
+	cursor: pointer;
   }
   
   
   .nav-links:hover{
     color: var(--white);
-    transition: all 0.2s ease-out;
+    /* transition: all 0.2s ease-out; */
   }
   
   .menu-toggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
     background: var(--white) ;
   }
 
-/*---------------Hover FX Nav menu--------------*/
+/*---------------Hover FX Nav Items--------------*/
 .line-through {
 	position: relative;
 	display: block;
@@ -147,7 +147,7 @@ header{
 	position: absolute;
 	width: 0%;
 	height: 2px;
-	top: 50%;
+	top: 45%;
 	margin-top: -0.5px;
 	background: #fff;
 }
@@ -158,13 +158,13 @@ header{
 .line-through:after {
 	right: 0.3px;
 	background: var(--lightred);
-	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .line-through:hover:before {
 	background: var(--lightred);
 	width: 100%;
-	transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
 	cursor: pointer;
 }
 
@@ -192,6 +192,7 @@ header{
 	font-size: 3.75em;
 	font-weight: 400;
 	color: var(--white);
+	text-transform: uppercase;
 }
 
 .col h3{
@@ -335,12 +336,8 @@ section{
 .container-fluid .card .content a{
 	position: relative;
 	display: inline-block;
-	padding: 8px 35px;
 	color: var(--deepdark);
 	text-decoration: none;
-	font-family: 'Waiting for the Sunrise', cursive;
-	font-weight: bold;
-	
 }
 
 .container-fluid .card .content a:hover{
@@ -348,13 +345,17 @@ section{
 }
 
 .container-fluid .card .content button{
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-weight: bold;
 	border: 1px solid var(--lightdark);
 	background: var(--white);
 	border-radius: 20px;
+	padding: 8px 100px;
 }
 
 .container-fluid .card .content button:hover{
 	background-color: var(--deepdark);
+	color: var(--white);
 }
 
 
@@ -367,6 +368,26 @@ section{
 	height: 350px;
 }
 
+#wrapper > :last-child {
+	display: none;
+  }
+#wrapper.switched > :last-child {
+	display: block;
+	transition: all 2s;
+  }
+#wrapper.switched > :first-child {
+	display: none;
+  }
+
+button.return{
+	position: relative;
+	top: -38px;
+	left: -197px;
+}
+
+#second iframe{
+	margin:25px;
+}
 
 /*------------------------------- END SECTION RELEASES -----------------------*/
 
@@ -444,12 +465,6 @@ a.button:hover{
 }
 
 /*-----------videos----------------*/
-.wrapper-video{
-	display: flex;
-	justify-content: center;
-	filter: grayscale(100%);
-    padding: 30px
-}
 
 .carousel img{
 	margin: auto;
@@ -473,6 +488,8 @@ a.button:hover{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--lightdark);
+	padding: 20px 20px 10px;
 }
 
 .follow p{
