@@ -1,5 +1,21 @@
 /* ----------------MEDIA QUERIES------------------------- */
 
+:root{
+    --brightred: #F9423D;
+    --darkgray: #212329;
+    --darkgrayTransparent: #21232961;
+	--darkredtransparent: #801e1b5d;
+    --deepdark:#000;
+    --lightred: #f9433dcc;
+    --lightyellow:  #f4a235;
+	--lightwhite:rgba(114,114,114,.25);
+    --lightdark: rgba(19, 18, 18, 0.664);
+	--ligthtransparent: rgba(0, 0, 0, 0.56);
+	--lightgraytransparent: rgba(61, 61, 61, 0.185);
+    --whitegraytransparent: rgba(183, 183, 183, 0.655);
+    --white: #fff;
+}
+
 /*------------------BURGER MENU------------------*/
 @media screen and (max-width:1080px) {
     
@@ -10,7 +26,7 @@
     .nav-menu{
         display: grid;
         grid-template-columns: auto;
-        background: var(--brightred);
+        /* background: var(--brightred); */
         margin: 0;
         width: 100%;
         position: absolute;
@@ -48,25 +64,6 @@
         width: 100%;
     }
     
-    .nav-links-btn{
-        border: none;
-        padding: 0;
-        border-radius: 0;
-        background-color: var(--lightdark);
-        color: var(--white);
-        transition: all 0.4s ease-out;
-        margin-left: 0;
-    }
-    
-    .nav-links-btn:hover{
-        border: none;
-        padding: 0;
-        border-radius: 0;
-        background-color: var(--lightyellow);
-        color: var(--brightred);
-        transition: all 0.4s ease-out;
-    }
-    
     #mobile-menu{
         position: absolute;
         top: 20%;
@@ -94,12 +91,28 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    /*----------------------Hover FX Nav Items----------------*/
+
+    .line-through:hover:before {
+        width: 100%;
+    }
+    
+    .line-through:hover:after {
+        width: 0%;
+    }
+
+    .line-through:before, .line-through:after {
+        top: 50%;
+    }
 }
 
 /*------------------END BURGER MENU------------------*/
 
+
  @media screen and (min-width:1400px){
-     /*----------------Navbar Logo-------------*/
+
+    /*----------------Navbar Logo-------------*/
      #navbar-logo{
         font-size: 1.3em;
     }
@@ -541,6 +554,10 @@
     .container-fluid .card .content p{
         font-size: 0.8em;
         word-break: break-all;
+    }
+
+    .container-fluid .card .content a{
+        padding: 8px 80px;
     }
     
     /*-------------------SECTION Live-------------*/
