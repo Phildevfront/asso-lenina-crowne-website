@@ -86,7 +86,6 @@ header{
     font-weight: bold;
     
   }
-  
   #navbar-logo{
     justify-self: start;
     width: 240px;
@@ -95,11 +94,11 @@ header{
     font-size: 2em;
     text-decoration: none;
     color: var(--lightyellow);
-  }
-  
-  #navbar-logo{
+}
+
+#navbar-logo{
     cursor: pointer;
-  }
+}
   
   .nav-menu{
     display: grid;
@@ -186,6 +185,7 @@ header{
 	font-size: 6em;
 	font-weight: 400;
 	color: var(--lightyellow);
+	text-transform: uppercase;
 }
 
 .col h2{
@@ -209,6 +209,16 @@ header{
 .row.align-items-end{
 	height: 250px;
     margin-top: 100px;
+}
+
+p.text-asso{
+	max-width: 50%;
+	margin: auto;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: var(--white);
+	margin-bottom: 20px;
 }
 
 /*--------------------------------- END HEADER -----------------------------------*/
