@@ -208,6 +208,18 @@ form{
     margin-bottom: 100px;
 }
 
+button.btn.btn-primary{
+    color: var(--lightgraytransparent);
+    background-color: var(--lightgray)!important;
+    border-color: var(--lightgray)!important;
+}
+
+
+button.btn.btn-primary:hover{
+    color: var(--darkyellow);
+}
+
+
 .return{
    text-decoration: none!important;
     font-size: 20px;
