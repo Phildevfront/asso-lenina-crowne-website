@@ -10,6 +10,7 @@
      crossorigin="anonymous">
     <!---------------------------- CSS --------------------------------------->
     <link rel="stylesheet" href="assets/css/event-main.css">
+		<link rel="stylesheet" href="assets/css/event-mediaqueries.css">
     <!---------------------------- FONTS --------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,77 +31,96 @@
 	<meta name="description" content="Lenina Crowne association official web page"/>
 </head>
 <body>
-    <header>
-    </header>
-    <main>
-      <section class="page-hero">
-        <div class="container bg-image">
-          <div class="row align-items-center">
-            <div class="col">
-            </div>
-          </div>
-        </div>   
-      </section>
-      <section class="page-body">
-        <article class="page-body-wrap-text">
-          <div class="container-fluid">
-            <div class="content">
-                  <span><h1>&nbsp;lenina crowne on tour 2013&nbsp;</h1></span>
-                  <p>Après plusieurs mois de silence, Lenina Crowne sort son nouvel album.  Venez le découvrir live à l'occassion du</p>
-                  <span><h2>> summer pop punk tour 2013! <</h2></span>
-                  <h3>concerts</h3>
-                  <p>Au programme <strong>21 dates pour 21 soirées uniques dans tout l’Hexagone </strong>
-                    en compagnie de la nouvelle garde du Punk Rock français, ils seront accompagnés par les <strong>RED IS DEAD</strong>.
-                    </p>
-                  <h3>animations</h3>
-                  <p>Retrouvez aussi un tas d’animations à chaque étape : <strong>scénographie, projections, Air Guitar, photocall interactif, 
-                    merch exclusif à gagner</strong> chaque soir</p>
-                  <img src="assets/medias/bkg-img/affiche_concert_chti_tour.jpg">
-                  <h3 class="concours">concours</h3>
-                  <p>Tentez de gagner le nouvel album CD de <strong>Lenina Crowne</strong>.Le tirage au sort aura lieu 02 septembre.</p>
-                  <p>Pour participer inscrivez-vous :</p>
+  <header id="up">
+		<div class="nav-container">
+			<nav id="nav" class="navbar">
+				<a href="#"  id="navbar-logo">
+			</a>
+			  <div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			  </div>
+			  <ul class="nav-menu">
+				<li><span><a href="/index.html" class="nav-links">HOME</a></span></li>
+				<li><span><a href="#tour" class="nav-links">ON TOUR</a></span></li>
+				<li><span><a href="#concours" class="nav-links">CONCOURS</a></span></li>
+			  </ul>
+			</nav>
+		</div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container bg-image">
+      </div>   
+    </section>
+    <section class="page-body">
+      <article class="page-body-wrap-text">
+        <div class="container-fluid">
+          <div class="content">
+                <span id="tour"><h1>-&nbsp;lenina crowne on tour 2013&nbsp;-</h1></span>
+                <p>Après plusieurs mois de silence, <strong>Lenina Crowne</strong> sort son nouvel album.  Venez le découvrir en live à l'occassion du :</p>
+                <span><h2> summer pop punk tour 2013 </h2></span>
+                <h3>concerts</h3>
+                <p>Au programme <strong>30 dates pour 30 soirées uniques dans tout l’Hexagone </strong>
+                  en compagnie de la nouvelle garde du Punk Rock français, ils seront accompagnés par les <strong>RED IS DEAD</strong>.
+                  </p>
+                <h3>animations</h3>
+                <p>Retrouvez aussi un tas d’animations à chaque étape : <strong>scénographie, projections, Air Guitar, photocall interactif, 
+                  merch exclusif à gagner</strong> chaque soir</p>
+                <img src="assets/medias/bkg-img/affiche_concert_chti_tour.jpg">
+                <h3 id="concours">concours</h3>
+                <p>Tentez de gagner le nouvel album CD de <strong>Lenina Crowne</strong>.Le tirage au sort aura lieu 02 septembre.</p>
+                <p>Pour participer inscrivez-vous :</p>
+                <div class="container-fluid">
                   <form class="row g-3">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                              </div>
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                              </div>
-                            <div class="col-md-12">
-                              <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="inputEmail4">
-                            </div>
-                            <div class="col-12">
-                              <input type="text" class="form-control" id="inputAddress" placeholder="Address">
-                            </div>
-                            <div class="col-md-6">
-                              <input type="text" class="form-control"  placeholder="City" aria-label="City" id="inputCity">
-                            </div>
-                            <div class="col-md-6">
-                              <input type="text" class="form-control" placeholder="Zip" id="inputZip">
-                            </div>
-                            <div class="col-12">
-                              <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Nom" aria-label="Nom">
+                          </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom">
+                          </div>
+                        <div class="col-md-12">
+                          <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Addresse" aria-label="Email">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control"  placeholder="Ville" aria-label="Ville" id="inputVille">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="code postale" id="inputcodepostale">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">SOUMETTRE</button>
+                        </div>
                   </form>
                 </div>
-                <button type="button" class="btn btn-link"><a href="/index.html">RETOUR</a></button>
-            </div>
-        </article>
-      </section>
-    </main>
-            
-             
-            
-    <footer>
-
-    </footer>
+								<div class="return">
+									<button type="button" class="btn btn-link"><a href="/index.html">RETOUR SITE</a></button>
+									<button type="button" class="btn btn-link"><a href="#up">HAUT de page</a></button>
+								</div>
+              </div>
+          </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="credit">
+      <p>Lenina Crowne Asso. &copy;2022.<br />All rights reserved.</p>
+      <p><a href="#">Legal Notice</a></p>
+      <p>Powered by <a href="https://www.philippebaurens.com" target="_blank">SNAPSHOT</a></p>
+    </div>
+  </footer>
     
     <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Bootstrap CDN JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-<script src="assets/js/"></script>
+<script src="../assets/js/burgerMenu.js"></script>
+<script src="../assets/js/nav-scroll.js"></script>
+<script src="../assets/js/navbar-close.js"></script>
 </body>
 </html>

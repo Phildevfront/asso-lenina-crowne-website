@@ -28,7 +28,8 @@ main{width: 100%; overflow-x: hidden;}
     --deepdark:#000;
     --lightgray:#d4cebd;
     --lightred: #f9433dcc;
-    --lightyellow:  #f4a235;
+    --lightyellow: #f4a235;
+    --darkyellow: #ac7e41;
 	--lightwhite:rgba(114,114,114,.25);
     --lightdark: rgba(19, 18, 18, 0.664);
 	--ligthtransparent: rgba(0, 0, 0, 0.56);
@@ -54,40 +55,96 @@ body {
     background-repeat: no-repeat;
 }
 
-
-span{
-    text-transform: uppercase;
-    text-align: center;
-    
-}
-
-
-h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 3.1em;
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin-bottom: 40px;
-}
-
-h2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-h3{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
+.page-hero{
+    margin-top: 50px;
 }
 
 /*----------------NAV--------------------*/
 
+.nav-container{
+    width: 100vw;
+    background-color: var(--lightdark);
+}
+  
+#nav{
+  position:fixed;
+  top: 0;
+  transition: top 0.4s ;
+  z-index: 9999;
+}
+
+#nav.navbar{
+  background-color: var(--lightdark);
+}
+
+#nav.navbar.hidden {
+  top: -80px;
+}
+  
+.navbar{
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+/* #navbar-logo{
+    justify-self: start;
+    width: 240px;
+    margin: 0 20px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--lightyellow);
+} */
+
+#navbar-logo{
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    list-style: none;
+    text-align: center;
+    justify-self: end;
+	padding-right: 2rem;
+}
+
+.nav-links{
+    /* font-size: 24px; */
+	font-weight: 400;
+	line-height: 22px;
+    letter-spacing: 2px;
+    color: var(--lightgray);
+    text-decoration: none;
+	margin: 0 25px;
+	cursor: pointer;
+  }
+  
+  
+  .nav-links:hover{
+    color: var(--darkyellow);
+    transition: all 0.2s ease-out;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: var(--lightgray) ;
+  }
+
+/*--------------- SECTION PAGE-BODY CONTENT------------------*/
+
 .page-body{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .page-body-wrap-text{
@@ -97,12 +154,45 @@ h3{
 .container-fluid {
     position: relative;
     z-index: 10;
-    padding: 0 0 100px;
+    padding: 0 0 60px;
     max-width: 800px;
     margin: auto;
 }
-form{
+
+.content{
+    padding: 20px;
+}
+
+span{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 2px;
     margin-bottom: 100px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 img{
@@ -114,12 +204,8 @@ img{
     height: auto;
 }
 
-p{
-    margin-bottom: 30px;
-}
-
-.concours{
-    margin-bottom: 30px;
+form{
+    margin-bottom: 100px;
 }
 
 .return{
@@ -152,3 +238,58 @@ button.btn.btn-link:hover{
 button.btn.btn-link a:hover{
     color: var(--lightwhite);
 }
+
+.return{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+footer{
+	background-color: var(--darkgray);
+}
+.social-banner{
+	margin-bottom: 90px;
+	background-color: #000000;
+}
+  
+.social-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons i{
+	padding: 50px;
+}
+
+.fa-facebook:hover{
+	color:#3366cc; 
+	cursor: pointer;
+}
+
+.fa-bandcamp:hover {
+    color: #669999;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    color: #3399ff;
+    cursor: pointer;
+}
+  .credit{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	color: var(--white);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 50px;
+  }
+
+  .credit a{
+	text-decoration: none;
+  }
