@@ -21,19 +21,22 @@ main{width: 100%; overflow-x: hidden;}
 
 /*----------------------- VAR COLOR ------------------------*/
 :root{
-    --brightred: #F9423D;
-    --darkgray: #212329;
-    --darkgrayTransparent: #21232961;
+	--brightred: #F9423D;
+	--darkgray: #212329;
+	--darkgrayTransparent: #21232961;
 	--darkredtransparent: #801e1b5d;
-    --deepdark:#000;
-    --lightred: #f9433dcc;
-    --lightyellow:  #f4a235;
+	--deepdark:#000;
+	--lightgray:#d4cebd;
+	--lightred: #f9433dcc;
+	--lightyellow: #f4a235;
+	--darkyellow: #ac7e41;
 	--lightwhite:rgba(114,114,114,.25);
-    --lightdark: rgba(19, 18, 18, 0.664);
+	--lightdark: rgba(19, 18, 18, 0.664);
 	--ligthtransparent: rgba(0, 0, 0, 0.56);
 	--lightgraytransparent: rgba(61, 61, 61, 0.185);
-    --whitegraytransparent: rgba(183, 183, 183, 0.655);
-    --white: #fff;
+	--whitegraytransparent: rgba(183, 183, 183, 0.655);
+	--white: #fff;
+	--event: #151516;
 }
 
 /*------------------------ END VAR COLOR ----------------------*/
@@ -52,6 +55,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /*----------------- NAVBAR MENU -------------------*/
 .nav-container{
@@ -145,10 +149,11 @@ header{
 	content: '';
 	position: absolute;
 	width: 0%;
-	height: 2px;
+	height: 3px;
 	top: 45%;
 	margin-top: -0.5px;
 	background: #fff;
+	cursor: pointer;
 }
 
 .line-through:before {
@@ -549,5 +554,10 @@ footer{
   }
 
   .credit a{
+	color: var(--lightgray);
 	text-decoration: none;
+  }
+
+  .credit a:hover{
+	  color: var(--darkyellow);
   }
