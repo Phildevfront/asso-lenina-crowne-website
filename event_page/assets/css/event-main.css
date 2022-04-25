@@ -47,17 +47,26 @@ body {
     background-color: var(--event);
 }
 
-.bg-image {
-    background: url('/event_page/assets/medias/bkg-img/Banner-concert-warmFest-leninaCrowne.png') center center;
-    background-size: contain;
-    width: 80%;
-    height: 50vh;
-    background-repeat: no-repeat;
-}
-
 .page-hero{
+    padding: 20px;
     margin-top: 50px;
 }
+
+.bg-image {
+    background: url('/event_page/assets/medias/bkg-img/banner-events2.jpg') center center;
+    background-size: contain;
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    max-width: 800px;
+}
+
+/* .container.bg-image{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+} */
+
 
 /*----------------NAV--------------------*/
 
@@ -303,5 +312,10 @@ footer{
   }
 
   .credit a{
+	color: var(--lightgray);
 	text-decoration: none;
+  }
+
+  .credit a:hover{
+	  color: var(--darkyellow);
   }
