@@ -10,16 +10,7 @@ body{font-size: 18px;}
 
 main{width: 100%; overflow-x: hidden;}
 
-
-/*----------------------- FONTS -----------------------*/
-
-/* font-family: 'Covered By Your Grace', cursive; */
-
-/* font-family: 'Waiting for the Sunrise', cursive; */
-
-/*---------------------- END FONTS -----------------------*/
-
-/*----------------------- VAR COLOR ------------------------*/
+/*----------------------- COLOR ------------------------*/
 :root{
     --brightred: #F9423D;
     --darkgray: #212329;
@@ -37,11 +28,13 @@ main{width: 100%; overflow-x: hidden;}
     --whitegraytransparent: rgba(183, 183, 183, 0.655);
     --white: #fff;
     --event: #151516;
+    --navburger:rgba(0, 0, 0, 0.783);
 }
 
-/*------------------------ END VAR COLOR ----------------------*/
+/*------------------------ END COLOR ----------------------*/
 
 body {
+    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     color: var(--lightgray);
     background-color: var(--event);
@@ -58,21 +51,14 @@ body {
     width: 100%;
     height: 35vh;
     background-repeat: no-repeat;
-    max-width: 800px;
+    max-width: 1024px;
 }
-
-/* .container.bg-image{
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-} */
 
 
 /*----------------NAV--------------------*/
 
 .nav-container{
     width: 100vw;
-    background-color: var(--lightdark);
 }
   
 #nav{
@@ -83,7 +69,7 @@ body {
 }
 
 #nav.navbar{
-  background-color: var(--lightdark);
+  background-color: var(--navburger);
 }
 
 #nav.navbar.hidden {
@@ -101,16 +87,6 @@ body {
   font-size: 1em;
   font-weight: 700;
 }
-
-/* #navbar-logo{
-    justify-self: start;
-    width: 240px;
-    margin: 0 20px 10px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    color: var(--lightyellow);
-} */
 
 #navbar-logo{
     cursor: pointer;
@@ -172,32 +148,28 @@ body {
     padding: 20px;
 }
 
-span{
-    text-transform: uppercase;
-    text-align: center;
-}
-
 p{
     margin-bottom: 30px;
 }
 
 h1{
-    font-family: 'Oswald', sans-serif;
     font-size: 3em;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2{
-    font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 70px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h3{
-    font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
@@ -213,12 +185,14 @@ img{
     height: auto;
 }
 
+/*--------------- FORM ------------------*/
+
 form{
     margin-bottom: 100px;
 }
 
 button.btn.btn-primary{
-    color: var(--lightgraytransparent);
+    color: var(--deepdark);
     background-color: var(--lightgray)!important;
     border-color: var(--lightgray)!important;
 }
@@ -235,7 +209,7 @@ button.btn.btn-primary:hover{
 }
 
 
-button.btn.btn-link{
+a.btn.btn-link{
     background-color: var(--lightgray)!important;
     padding: 5px 30px;
     text-decoration: none!important;
@@ -243,79 +217,53 @@ button.btn.btn-link{
     cursor: pointer;
 }
 
-button.btn.btn-link a{
+a.btn.btn-link {
     font-family: 'Oswald', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     color: var(--deepdark);
     text-decoration: none!important;
-    
+    line-height: 2em;
 }
 
-button.btn.btn-link:hover{
+a.btn.btn-link:hover{
     transform: scale(1.2, 1.2);
     transition: all 0.5s;
 }
 
-button.btn.btn-link a:hover{
-    color: var(--lightwhite);
+a.btn.btn-link:hover{
+    color: var(--darkyellow);
 }
 
-.return{
+.pages-return{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/*------------------- FOOTER ----------------*/
 
 footer{
 	background-color: var(--darkgray);
 }
-.social-banner{
-	margin-bottom: 90px;
-	background-color: #000000;
-}
-  
-.social-icons{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
 
-.social-icons i{
-	padding: 50px;
-}
-
-.fa-facebook:hover{
-	color:#3366cc; 
-	cursor: pointer;
-}
-
-.fa-bandcamp:hover {
-    color: #669999;
-    cursor: pointer;
-}
-
-.fa-twitter:hover {
-    color: #3399ff;
-    cursor: pointer;
-}
-  .credit{
+.credit{
 	display:flex;
 	align-items: center;
+    color: var(--white);
 	justify-content: space-around;
-	color: var(--white);
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	padding: 50px;
-  }
+}
 
-  .credit a{
-	color: var(--lightgray);
+.credit a {
+	color: var(--lightgray)!important;
 	text-decoration: none;
-  }
+    cursor: pointer;
+}
 
-  .credit a:hover{
-	  color: var(--darkyellow);
-  }
+.credit a:hover {
+    cursor: pointer;
+    color: var(--darkyellow)!important;
+}

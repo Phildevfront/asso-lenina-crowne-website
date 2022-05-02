@@ -17,6 +17,7 @@
 	--whitegraytransparent: rgba(183, 183, 183, 0.655);
 	--white: #fff;
 	--event: #151516;
+	--navburger:rgba(0, 0, 0, 0.783);
 }
 
 /*------------------BURGER MENU------------------*/
@@ -29,7 +30,6 @@
 	.nav-menu{
 		display: grid;
 		grid-template-columns: auto;
-		/* background: var(--brightred); */
 		margin: 0;
 		width: 100%;
 		position: absolute;
@@ -45,7 +45,7 @@
 	}
 	
 	.nav-menu.active{
-		background-color: var(--lightdark) ;
+		background-color: var(--navburger) ;
 		left: 0;
 		opacity: 1;
 		transition: all 0.7s ease;
@@ -146,7 +146,7 @@
 		text-align: center;
 	}
 
-	button.btn.btn-link{
+	a.btn.btn-link{
 		padding: 5px 10px;
 	}
 
@@ -188,7 +188,7 @@
 		text-align: center;
 	}
 
-	button.btn.btn-link{
+	a.btn.btn-link{
 		padding: 5px 10px;
 	}
 
@@ -232,7 +232,7 @@
 		text-align: center;
 	}
 
-	button.btn.btn-link{
+	a.btn.btn-link{
 		padding: 5px 10px;
 	}
 
