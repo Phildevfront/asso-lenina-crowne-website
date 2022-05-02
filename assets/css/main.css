@@ -4,7 +4,7 @@
 *{scroll-behavior: smooth}
 *{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: white;}
 
-html, body{width: 100%; position: relative;}
+html, body{width: 100%; position: relative; font-family: Arial, Helvetica, sans-serif;}
 
 body{font-size: 18px;}
 
@@ -12,14 +12,12 @@ main{width: 100%; overflow-x: hidden;}
 
 
 /*----------------------- FONTS -----------------------*/
-
 /* font-family: 'Covered By Your Grace', cursive; */
 
 /* font-family: 'Waiting for the Sunrise', cursive; */
 
-/*---------------------- END FONTS -----------------------*/
 
-/*----------------------- VAR COLOR ------------------------*/
+/*----------------------- COLOR ------------------------*/
 :root{
 	--brightred: #F9423D;
 	--darkgray: #212329;
@@ -37,9 +35,10 @@ main{width: 100%; overflow-x: hidden;}
 	--whitegraytransparent: rgba(183, 183, 183, 0.655);
 	--white: #fff;
 	--event: #151516;
+	--navburger:rgba(0, 0, 0, 0.783);
 }
 
-/*------------------------ END VAR COLOR ----------------------*/
+/*------------------------ END COLOR ----------------------*/
 
 
 /*--------------------------------- HEADER --------------------------------------*/
@@ -60,8 +59,6 @@ header{
 /*----------------- NAVBAR MENU -------------------*/
 .nav-container{
     width: 100vw;
-    background-color: var(--lightdark);
-    /*background-color: var(--darkgray);*/
   }
   
   #nav{
@@ -72,7 +69,7 @@ header{
   }
   
   #nav.navbar{
-    background-color: var(--lightdark);
+    background-color: var(--navburger);
   }
   
   #nav.navbar.hidden {
@@ -127,6 +124,7 @@ header{
   
   .nav-links:hover{
     color: var(--white);
+	cursor: pointer;
     /* transition: all 0.2s ease-out; */
   }
   
@@ -149,7 +147,7 @@ header{
 	content: '';
 	position: absolute;
 	width: 0%;
-	height: 3px;
+	height: 2px;
 	top: 45%;
 	margin-top: -0.5px;
 	background: #fff;
@@ -181,12 +179,13 @@ header{
 /*--------------------END Hover FX Nav menu--------------*/
 
 /*---------------- END NAVBAR MENU ------------------*/
-.col h1, h2, h3{
+.col h2, h3{
     color: var(--white);
     font-family: 'Covered By Your Grace', cursive;
 }
 
 .col h1{
+	font-family: 'Covered By Your Grace', cursive;
 	font-size: 6em;
 	font-weight: 400;
 	color: var(--lightyellow);
@@ -196,14 +195,12 @@ header{
 .col h2{
 	font-size: 3.75em;
 	font-weight: 400;
-	color: var(--white);
 	text-transform: uppercase;
 }
 
 .col h3{
 	font-size: 2em;
 	font-weight: 400;
-	color: var(--white);
 }
 
 .row.align-items-start{
@@ -237,7 +234,6 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* filter: grayscale(100%); */
 }
 
 section{
@@ -324,8 +320,6 @@ section{
 
 .container-fluid .card .content h3{
 	font-size: 1.8em;
-	font-family: 'Waiting for the Sunrise', cursive;
-	color: var(--white);
 	z-index: 1;
 }
 
@@ -349,13 +343,6 @@ section{
 	display: inline-block;
 	color: var(--deepdark);
 	text-decoration: none;
-}
-
-.container-fluid .card .content a:hover{
-	color: var(--lightyellow);
-}
-
-.container-fluid .card .content button{
 	font-family: 'Waiting for the Sunrise', cursive;
 	font-weight: bold;
 	border: 1px solid var(--lightdark);
@@ -363,6 +350,11 @@ section{
 	border-radius: 20px;
 	padding: 8px 100px;
 }
+
+.container-fluid .card .content a:hover{
+	color: var(--lightyellow);
+}
+
 
 .container-fluid .card .content button:hover{
 	background-color: var(--deepdark);
@@ -379,26 +371,6 @@ section{
 	height: 350px;
 }
 
-#wrapper > :last-child {
-	display: none;
-  }
-#wrapper.switched > :last-child {
-	display: block;
-	transition: all 2s;
-  }
-#wrapper.switched > :first-child {
-	display: none;
-  }
-
-button.return{
-	position: relative;
-	top: -38px;
-	left: -197px;
-}
-
-#second iframe{
-	margin:25px;
-}
 
 /*------------------------------- END SECTION RELEASES -----------------------*/
 
@@ -407,12 +379,17 @@ button.return{
 
 .content-text{
 	display: flex;
-	flex-direction:row;
+	flex-direction:column;
     justify-content: center;
 	margin: auto;
     padding: 20px;
 	background-color: var(--lightdark);
-	width: 75%;
+	width: 85%;
+	text-align: justify;
+}
+
+.content-text h3{
+	text-align: center;
 }
 
 .content-text p{
@@ -423,6 +400,7 @@ button.return{
 	font-size: 24px;
 	color:#ffffff;
 }
+
 /*------------------------------- END SECTION ABOUT US -----------------------*/
 
 /*------------------------------- SECTION LIVE -----------------------*/
@@ -502,16 +480,6 @@ a.button:hover{
 	font-size: 24px;
 }
 
-/*------------------------------- END SECTION CONTACT -----------------------*/
-
-/*--------------------------------- END MAIN -------------------------------------*/
-
-/*---------------------------------- FOOTER --------------------------------------*/
-footer{
-	background-image: linear-gradient(rgba(42, 41, 41, 0.668), 
-    rgba(5, 5, 5, 0.585)),url("/assets/medias/bkg-img/dark-layer.jpg");
-	background-size: cover;
-}
 .social-banner{
 	margin-bottom: 90px;
 	background-color: #000000;
@@ -534,30 +502,41 @@ footer{
 }
 
 .fa-bandcamp:hover {
-    color: #669999;
-    cursor: pointer;
+	color: #669999;
+	cursor: pointer;
 }
 
 .fa-twitter:hover {
-    color: #3399ff;
-    cursor: pointer;
+	color: #3399ff;
+	cursor: pointer;
 }
-  .credit{
+
+/*------------------------------- END SECTION CONTACT -----------------------*/
+
+/*--------------------------------- END MAIN -------------------------------------*/
+
+/*---------------------------------- FOOTER --------------------------------------*/
+footer{
+	background-color: var(--darkgray);
+}
+
+.credit{
 	display:flex;
 	align-items: center;
 	justify-content: space-around;
 	color: var(--white);
 	font-family: 'Waiting for the Sunrise', cursive;
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 16px;
 	padding: 50px;
-  }
+}
 
-  .credit a{
-	color: var(--lightgray);
+.credit p > a {
+	color: #e2cf9b;
 	text-decoration: none;
-  }
+}
 
-  .credit a:hover{
-	  color: var(--darkyellow);
-  }
+.credit p > a:hover {
+	cursor: pointer;
+	color: #ac7e41;
+}

@@ -14,6 +14,7 @@
 	--lightgraytransparent: rgba(61, 61, 61, 0.185);
     --whitegraytransparent: rgba(183, 183, 183, 0.655);
     --white: #fff;
+    --navburger:rgba(0, 0, 0, 0.783);
 }
 
 /*------------------BURGER MENU------------------*/
@@ -42,7 +43,7 @@
     }
     
     .nav-menu.active{
-        background-color: var(--lightdark) ;
+        background-color: var(--navburger) ;
         left: 0;
         opacity: 1;
         transition: all 0.7s ease;
@@ -536,6 +537,14 @@
         height: 0;
         margin-top: 0;
     }
+
+
+/*----------------SECTION ABOUT US-------------*/
+
+    .content-text p{
+        font-size: 15px;
+    }
+
 
     /*----------------SECTION RELEASES-------------*/
 
