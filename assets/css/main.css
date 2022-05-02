@@ -384,11 +384,13 @@ section{
 	margin: auto;
     padding: 20px;
 	background-color: var(--lightdark);
-	width: 85%;
+	/* width: 75%; */
+	max-width: 900px;
 	text-align: justify;
 }
 
 .content-text h3{
+	font-size: 28px;
 	text-align: center;
 }
 
