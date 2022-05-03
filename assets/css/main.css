@@ -49,7 +49,7 @@ header{
 }
 
 .bgk-items{
-    background: url('/assets/medias/bkg-img/Lenina_Home_Background.jpg') center center;
+    background: url('../medias/bkg-img/Lenina_Home_Background.jpg') center center;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ p.text-asso{
 /*--------------------------------- MAIN -----------------------------------*/
 
 main{
-    background: url("/assets/medias/bkg-img/dark-layer.jpg") center center;
+    background: url("../medias/bkg-img/dark-layer.jpg") center center;
     width: 100%;
     height: auto;
     background-size: cover;
