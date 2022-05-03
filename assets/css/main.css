@@ -94,6 +94,7 @@ header{
     font-family: 'Covered By Your Grace', cursive;
     font-size: 2em;
     text-decoration: none;
+	text-transform: uppercase;
     color: var(--lightyellow);
 }
 
