@@ -619,14 +619,14 @@
 
 /*---------------------- LANDSCAPE ----------------------*/
 
-@media screen and (max-height:768px) {
+@media screen and (max-height:667px) and (max-height:768px) {
     .row.align-items-start {
         height: 490px;
         padding-top: 150px;
     }
 }
 
-@media screen and (max-height:667px) {
+@media screen and (max-height:567px) and (max-height:666px) {
 
     .row.align-items-start {
         height: 410px;
@@ -634,7 +634,7 @@
     }
 }
 
-@media screen and (min-height:414px) and (max-height:567px) {
+@media screen and (min-height:414px) and (max-height:566px) {
 
     .row.align-items-start{
         height: 252px;
