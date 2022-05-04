@@ -619,6 +619,13 @@
 
 /*---------------------- LANDSCAPE ----------------------*/
 
+@media screen and (max-height:768px) {
+    .row.align-items-start {
+        height: 490px;
+        padding-top: 150px;
+    }
+}
+
 @media screen and (max-height:667px) {
 
     .row.align-items-start {
