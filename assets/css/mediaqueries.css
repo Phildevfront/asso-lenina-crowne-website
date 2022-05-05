@@ -533,7 +533,7 @@
     }
     
     .row.align-items-start {
-        height: 410px;
+        height: 350px;
         padding-top: 137px;
     }
 
@@ -625,7 +625,7 @@
 
 @media screen and (max-height:667px) and (max-height:768px) {
     .row.align-items-start {
-        height: 490px;
+        height: 430px;
         padding-top: 150px;
     }
 }
