@@ -409,7 +409,11 @@
 
     .credit:first-child{
         text-align: center;
-    }   
+    }
+    
+    .legal{
+        margin-right: 0;
+    }
 
 
 }
