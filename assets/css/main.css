@@ -129,7 +129,7 @@ header {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  /* transition: all 0.3s ease-out; */
+  transition: all 0.3s ease-out;
   background: var(--white) ;
 }
 

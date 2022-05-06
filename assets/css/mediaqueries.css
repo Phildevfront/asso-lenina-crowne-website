@@ -27,7 +27,6 @@
     .nav-menu{
         display: grid;
         grid-template-columns: auto;
-        /* background: var(--brightred); */
         margin: 0;
         width: 100%;
         position: absolute;
