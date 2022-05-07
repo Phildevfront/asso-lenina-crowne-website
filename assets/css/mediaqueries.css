@@ -677,6 +677,10 @@
         font-size: 1.5em;
     }
 
+    .legal {
+        margin-right: 0;
+    }
+
 }
 
 
@@ -697,6 +701,10 @@
 
     .col h3 {
         font-size: 1.2em;
+    }
+
+    .legal {
+        margin-right: 0;
     }
 
 }
